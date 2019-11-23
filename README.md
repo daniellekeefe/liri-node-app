@@ -1,5 +1,5 @@
 # liri-node-app
-#LIRI-Node-Bot
+# LIRI-Node-Bot
  
 Through this assignment I created LIRI. LIRI is similar to the iPhone's SIRI. SIRI is a Speech Interpretation and Recognition Interface, LIRI was designed to be a Language Interpretation and Recognition Interface. 
  
@@ -9,9 +9,9 @@ Through this assignment I created LIRI. LIRI is similar to the iPhone's SIRI. SI
  
  
 Packages & APIs Leveraged:
-*Packages
-    *Moment: Date & Time
-    *Axios: Bands in Town, Spotify and OMDB APIs
+* Packages
+    * Moment: Date & Time
+    * Axios: Bands in Town, Spotify and OMDB APIs
  
 * API
     * Bands in Town (T&C state only Band of Managers use)
@@ -29,10 +29,11 @@ Functions each search, concert-this, spotify-this-song, movie-this and do-what-i
 App Use: 
 Open New Terminal ensure you are in the correct folder. 
 **Call on the functions**: There are four possible scenarios, outlined below. 
-*node liri.js concert-this ex. Florence & The Machine
-*node liri.js spotify-this-song ex. The Scientist
-*node liri.js movie-this Name of ex. BIG
-*node liri.js do-what-it-says  simply hit enter, the text in the random.txt file will be executed. 
+* Functions
+    * node liri.js concert-this ex. Florence & The Machine
+    * node liri.js spotify-this-song ex. The Scientist
+    * node liri.js movie-this Name of ex. BIG
+    * node liri.js do-what-it-says  simply hit enter, the text in the random.txt file will be executed. 
  
  
 GitHub Repo: 
