@@ -19,12 +19,13 @@ Packages & APIs Leveraged:
     * OMDB
  
 **Project is organized into**
-Two JS files. 
-keys.js: placeholder for the private .env file that contains the private credentials to the spotify API. 
-liri.js: Where the magic happens. This JS file contains all: 
+two JS files. 
+
+* keys.js: placeholder for the private .env file that contains the private credentials to the spotify API. 
+* liri.js: Where the magic happens. This JS file contains all: 
 Variables for supporting packages & APIs. 
-Switch statement: allowing the switch statement to be evaluated once, the value of the expression is compared for each case. If a match the block of code will be executed. 
-Functions each search, concert-this, spotify-this-song, movie-this and do-what-it-says. When calling through the command line, defined information from each search will be displayed via the console.log.
+* Switch statement: allowing the switch statement to be evaluated once, the value of the expression is compared for each case. If a match the block of code will be executed. 
+* Functions each search, concert-this, spotify-this-song, movie-this and do-what-it-says. When calling through the command line, defined information from each search will be displayed via the console.log.
  
 App Use: 
 Open New Terminal ensure you are in the correct folder. 
