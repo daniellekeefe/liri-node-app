@@ -12,8 +12,11 @@ let axios = require('axios'); //To get the information from the APIs for movie a
 let fs = require('fs'); //To read the random.txt file for the do-what-it-says function
 
 let command = process.argv[2]; //For the switch statement
-let value = process.argv[3]; //To send the song/movie/concert to their respective functions
+let value = process.argv.slice(3); //To send the song/movie/concert to their respective functions//TODO improve ux
+console.log(process.argv)
 
+getUserInput()
+function getUserInput(){
 switch (command) {
     case "concert-this":
         concertThis(value);
@@ -27,8 +30,9 @@ switch (command) {
     case "do-what-it-says":
         doThis(value);
         break;
+        //default case to use inquirer
 };
-
+}
 function concertThis(value) {
     axios.get("https://rest.bandsintown.com/artists/" + value + "/events?app_id=codingbootcamp")
     .then(function(response) {    
@@ -36,12 +40,12 @@ function concertThis(value) {
 
             let datetime = response.data[i].datetime; //Saves datetime response into a variable
             let dateArr = datetime.split('T'); //Attempting to split the date and time in the response
-
+                console.log(dateArr)
             let concertResults = 
-                "--------------------------------------------------------------------" +
+                "----------------------------Concert Info----------------------------------------" +
                     "\nVenue Name: " + response.data[i].venue.name + 
                     "\nVenue Location: " + response.data[i].venue.city +
-                    "\nDate of the Event: " + moment(dateArr[0], "MM-DD-YYYY"); //dateArr[0] should be the date separated from the time
+                    "\nDate of the Event: " + moment(dateArr[0], "YYYY-MM-DD").format("MM-DD-YYYY"); //dateArr[0] should be the date separated from the time
             console.log(concertResults);
         }
     })
@@ -60,8 +64,8 @@ function spotifySong(value) {
     .search({ type: 'track', query: value })
     .then(function(response) {
         for (let i = 0; i < 5; i++) {
-            let spotifyResults = 
-                "--------------------------------------------------------------------" +
+             spotifyResults = 
+                "--------------------------------Spotify Info------------------------------------" +
                     "\nArtist(s): " + response.tracks.items[i].artists[0].name + 
                     "\nSong Name: " + response.tracks.items[i].name +
                     "\nAlbum Name: " + response.tracks.items[i].album.name +
@@ -81,8 +85,8 @@ function movieThis(value) {
     }
     axios.get("https://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=trilogy")
     .then(function(response) {
-             movieResults = 
-                "--------------------------------------------------------------------" +
+            let movieResults = 
+                "-----------------------------Movie Info---------------------------------------" +
                     "\nMovie Title: " + response.data.Title + 
                     "\nYear of Release: " + response.data.Year +
                     "\nIMDB Rating: " + response.data.imdbRating +
@@ -106,6 +110,9 @@ function doThis(value) {
             return console.log(error);
         }
         let dataArr = data.split(',');
-        spotifySong(dataArr[0], dataArr[1]);
+        console.log(dataArr)
+        command= dataArr[0]
+        value=dataArr[1];
+        getUserInput()
     })
 }
