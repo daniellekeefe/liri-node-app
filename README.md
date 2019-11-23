@@ -13,10 +13,10 @@ Packages & APIs Leveraged:
     *Moment: Date & Time
     *Axios: Bands in Town, Spotify and OMDB APIs
  
-*API
-    *Bands in Town (T&C state only Banr of Managers use)
-    *Spotify
-    *OMDB
+* API
+    * Bands in Town (T&C state only Band of Managers use)
+    * Spotify
+    * OMDB
  
 **Project is organized into**
 Two JS files. 
@@ -44,4 +44,4 @@ Various Screen Shots:
 ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
  
-Danielle Keef was lead developer in this project, receiving guidance from Jim Dhima, Dan Levinson, Justin Rice, Nick Groesh and Irving Angulo.
+*Danielle Keef was lead developer in this project, receiving guidance from Jim Dhima, Dan Levinson, Justin Rice, Nick Groesh and Irving Angulo.*
