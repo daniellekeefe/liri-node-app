@@ -3,12 +3,9 @@ require("dotenv").config();
 let keys = require("./keys.js");
 let Spotify = require('node-spotify-api'); //Using the Spotify api and getting the key from keys.js
 let spotify = new Spotify(keys.spotify);
-
 let moment = require('moment'); //Both required to use moment for node
 moment().format();
-
 let axios = require('axios'); //To get the information from the APIs for movie and concert-this
-
 let fs = require('fs'); //To read the random.txt file for the do-what-it-says function
 
 let command = process.argv[2]; //For the switch statement
