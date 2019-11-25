@@ -36,12 +36,12 @@ Open New Terminal ensure you are in the correct folder.
     * node liri.js do-what-it-says  simply hit enter, the text in the random.txt file will be executed. 
  
  
-* **GitHub Repo**: https://github.com/daniellekeefe/liri-node-app - automatic!
+* **GitHub Repo**: https://github.com/daniellekeefe/liri-node-app 
 [GitHub](https://github.com/daniellekeefe/liri-node-app)
-* **Liri-Node-Bot Video Link**: https://youtu.be/bnZWQlI76KU - automatic!
+* **Liri-Node-Bot Video Link**: https://youtu.be/bnZWQlI76KU 
 
 
-* **Various Screen Shots**: https://docs.google.com/document/d/17EHcM7sYLOfI3Qb6H7Xy8r0ZMx34zSL6Ygp2LAHOSko/edit?usp=sharing - automatic!
+* **Various Screen Shots**: https://docs.google.com/document/d/17EHcM7sYLOfI3Qb6H7Xy8r0ZMx34zSL6Ygp2LAHOSko/edit?usp=sharing 
 
  
 *Danielle Keef was lead developer in this project, receiving guidance from Jim Dhima, Dan Levinson, Justin Rice, Nick Groesh and Irving Angulo.*
