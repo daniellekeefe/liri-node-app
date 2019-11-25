@@ -41,8 +41,7 @@ Open New Terminal ensure you are in the correct folder.
 * **Liri-Node-Bot Video Link**: https://youtu.be/bnZWQlI76KU - automatic!
 
 
-Various Screen Shots: 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+* **Various Screen Shots**: https://docs.google.com/document/d/17EHcM7sYLOfI3Qb6H7Xy8r0ZMx34zSL6Ygp2LAHOSko/edit?usp=sharing - automatic!
+
  
 *Danielle Keef was lead developer in this project, receiving guidance from Jim Dhima, Dan Levinson, Justin Rice, Nick Groesh and Irving Angulo.*
